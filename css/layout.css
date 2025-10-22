@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+
+/* 전체 정리 ctrl+A, ctrl+I */
+* { margin: 0; padding: 0; font-size: 10px; font-family: 'Pretendard', 'paperlogy'} /* 앞에 있는 폰트가 우선순위 높음. */
+html { overflow-x: hidden;}
+/* html {overflow-x: hidden; font-family: 'Pretendard-Regular'; } */
+ul li { list-style: none; }
+a { color: #75797B; text-decoration: none; }
+
+/* @charset="UTF-8" */
+/* css 리셋파일 안에 들어가는 내용임 */
+
+
+
+
+
+
+/* 배경색 FAFAFA */
+/* 1440px */
+.wrap {background: #fff;}
+/* 상단메뉴 */
+
+/* ===== global container (centered content, 1440px 기준) ===== */
+.container { width: 1440px; /* 내부 폭: 1440px 디자인에서 좌우 여백을 포함해 중심 정렬 */ margin: 0 auto; position: relative; }
+
+/* 헤더 전용 컨테이너: 전체 넓이를 더 크게 사용(1780px)하지만 화면보다 클 경우 좌우 여백을 유지 */
+.site-header .container { width: 1780px; max-width: calc(100% - 40px); }
+
+/* ===== Header ===== */
+.site-header { background: #fff; position: relative; z-index: 20; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
+.site-header .head { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+.logo img { height: 80px; display: block; }
+.gnb ul { display: flex; gap: 32px; align-items: center; }
+.gnb ul li a { color: #000; font-size: 2rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
+.head-right { display: flex; align-items: center; gap: 18px; }
+.head-right .icons { display: flex; gap: 10px; margin: 0; padding: 0; }
+.head-right .icons li { list-style: none; }
+.head-right .icons a { color: #5570a8; font-size: 16px; display: inline-block; padding: 6px; }
+.actions { display: flex; gap: 10px; align-items: center }
+.btn { display: inline-block; padding: 10px 18px; border-radius: 26px; font-size: 13px; text-decoration: none; }
+.btn-outline { border: 2px solid #cfe0ff; background: transparent; color: #2f4f9b; }
+.btn-primary { background: #2f57a8; color: #fff; }
+
+/* ===== Main visual / Hero ===== */
+.main_visual { position: relative; }
+.visual_slide { height: calc(100vh - 110px); /* 헤더 높이(110px) 빼고 전체 화면 */ background-image: url('../images/hero.jpg'); background-size: cover; background-position: center right; position: relative; }
+.visual-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.0) 100%); height: 840px; }
+.hero_inner { position: relative; height: 100%; display: flex; align-items: center; }
+.hero_content { width: 40%; max-width: 520px; color: #fff; }
+.hero_title { font-size: 56px; line-height: 1; font-weight: 800; margin-bottom: 18px; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+.hero_desc { color: rgba(255,255,255,0.9); font-size: 16px; margin-bottom: 28px; }
+.btn-ghost { background: #fff; color: #2f57a8; padding: 12px 26px; border-radius: 40px; display: inline-block; font-weight: 700 }
+
+/* small responsive tweaks */
+@media (max-width:1200px) {
+	.container { width: 95%; }
+	.hero_title { font-size: 44px; }
+	.hero_content { width: 55%; padding-left: 24px }
+}
+@media (max-width:768px) {
+	.gnb { display: none; }
+	.hero_title { font-size: 32px; }
+	.visual_slide { background-position: center center; }
+	.hero_content { width: 80%; padding-left: 16px }
+}
