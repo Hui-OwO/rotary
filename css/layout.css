@@ -19,7 +19,7 @@ a { color: #75797B; text-decoration: none; }
 
 /* 배경색 #FFF */
 /* 1440px */
-.wrap {background: #fff;}
+.wrap {background: #fff; padding-top: 110px;}
 /* 상단메뉴 */
 
 /* ===== global container (centered content, 1440px 기준) ===== */
@@ -29,9 +29,9 @@ a { color: #75797B; text-decoration: none; }
 .site-header .container { width: 1780px; max-width: calc(100% - 40px); }
 
 /* ===== Header ===== */
-.site-header { background: #fff; position: relative; z-index: 20; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
+.site-header { background: #fff; position: fixed; top: 0; left: 0; right: 0; z-index: 99999999999999999999; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
 .site-header .head { display: flex; align-items: center; justify-content: space-between; height: 100%; }
-.logo img { height: 80px; display: block; }
+.logo img { height: 60px; display: block; }
 .gnb ul { display: flex; gap: 80px; align-items: center; }
 .gnb ul li a { color: #000; font-size: 2.5rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
 .head-right { display: flex; align-items: center; gap: 18px; }
@@ -45,18 +45,19 @@ a { color: #75797B; text-decoration: none; }
 
 .actions { display: flex; gap: 10px; align-items: center }
 /* 버튼 크기 */
-.btn { display: inline-block; padding: 25px 30px; border-radius: 15px; font-size: 2.8rem; font-weight: 700; line-height: 120%; text-decoration: none; }
+.btn { display: inline-block; padding: 20px 25px; border-radius: 15px; font-size: 2.5rem; font-weight: 700; line-height: 120%; text-decoration: none; }
 .btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F; box-shadow: inset 0 0 0 2px #00408F; }
 .btn-primary { background: #00408F; color: #fff; }
+
 
 /* ===== Main visual / Hero ===== */
 .main_visual { position: relative; }
 .visual_slide { height: calc(100vh - 110px); /* 헤더 높이(110px) 빼고 전체 화면 */ background-image: url('../images/visual_BG.jpg'); background-size: cover; background-position: center right; position: relative; }
 .visual-overlay { position: absolute; inset: 0; /* 부모 영역 전체 덮음 */ background: rgba(0,0,0,0.45); /* 균일한 반투명 단색 오버레이 */ pointer-events: none; /* 오버레이가 클릭을 막지 않음 */ z-index: 1; }
 .hero_inner { position: relative; height: 100%; display: flex; align-items: center; z-index: 2; }
-.hero_content { width: 40%; max-width: 570px; color: #fff; }
-.hero_title { font-family: 'paperlogy'; font-size: 7rem; line-height: 120%; font-weight: 800; margin-bottom: 60px; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
-.hero_desc { color: rgba(255,255,255,0.9); font-size: 2.6rem; font-weight: 500; line-height: 110%; margin-bottom: 110px; }
+.hero_content { width: 70%; max-width: 700px; color: #fff; }
+.hero_title { font-family: 'paperlogy'; font-size: 9rem; line-height: 120%; font-weight: 800; margin-bottom: 30px; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+.hero_desc { color: rgba(255,255,255,0.9); font-size: 2.6rem; font-weight: 500; line-height: 160%; margin-bottom: 90px; }
 .btn-ghost { background: #fff; color: #00408F; padding: 20px 50px; border-radius: 40px; display: inline-block; font-size: 2.4rem; line-height: 2.8rem; font-weight: 700 }
 
 /* small responsive tweaks */
@@ -72,27 +73,89 @@ a { color: #75797B; text-decoration: none; }
 	.hero_content { width: 80%; padding-left: 16px }
 }
 
-/* ===== News section (cards) ===== */
+/* ===== 로타리 소식 섹션 (cards) ===== */
 .news_section { padding: 160px 0 180px; } /* 섹션 위,아래 여백 */
-.news_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 60px; }
-.section_title { font-family: 'paperlogy'; font-size: 4.4rem; font-weight: 700; line-height: 120%; color: #000; }
+.news_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 40px; }
+.section_title { font-family: 'paperlogy'; font-size: 5rem; font-weight: 700; line-height: 120%; color: #000; }
 /* <,>,+ 버튼 */
-.news_controls { display:flex; gap:15px; align-items:center }
-.news_controls .ctrl { width:46px; height:46px; border-radius:50%; border:1px solid #dfe7f5; background:#fff; color:#2f57a8; font-size:18px }
+.controller { display:flex; gap:15px; align-items:center }
+.controller .ctrl { width:46px; height:46px; border-radius:50%; border:2px solid #ADD2FF; background:#fff; color:#2f57a8; cursor: pointer; }
+.controller .ctrl i { font-size: 2.4rem; }
+.controller .ctrl.prev { border: none; background: #6DAEFE; color: #fff; }
+.controller .ctrl.next { border: none; background: #1354A5; color: #fff; }
+.controller .ctrl.more { background: #ffffff; color: #00408F; border: 2px solid #ADD2FF; }
+
 .news_list { display:flex; gap:28px; }
 .news_card { width: 345px; border-radius: 30px; overflow: hidden; position: relative; }
 .news_card img { display:block; width:100%; height:345px; object-fit:cover }
-.card_caption { position:absolute; left:12px; bottom:12px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 110%; text-shadow:0 4px 10px rgba(0,0,0,0.6) }
+.card_caption { position:absolute; left:25px; top:265px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 140%; text-shadow:0 4px 10px rgba(0,0,0,0.6) }
 
-/* ===== People visual section ===== */
-.people_section { margin-top: 40px; }
-.people_visual { height: 420px; background-image: url('../images/people_bg.jpg'); background-size: cover; background-position: center; position: relative; display:flex; align-items:center }
-.people_visual .visual_overlay { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%); z-index:1 }
-.people_inner { position:relative; z-index:2; color:#fff; padding: 40px 0 }
-.people_title { font-size: 36px; font-weight:800; margin-bottom:12px }
-.people_sub { font-size:16px; margin-bottom:18px; max-width:760px }
-.btn-people { background: #ffbf2f; color:#fff; padding: 12px 22px; border-radius: 24px; font-weight:800 }
 
+/* ===== 행동하는 사람들 섹션 ===== */
+.people_intro { padding: 36px 0 12px; }
+.people_intro .people_T {margin-bottom:20px }
+.people_intro .people_sub { font-size:2.2rem; color:#3C3C3C; margin-bottom:40px; }
+.people_visual { height: 600px; background-image: url('../images/people_bg.jpg'); background-size: cover; background-position: center; position: relative; display:flex; align-items:center }
+.people_visual .visual_overlay { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.45) 100%); z-index:1 }
+.people_inner { position:relative; z-index:2; color:#fff; display:flex; flex-direction: column; align-items:center; justify-content:center; }
+.rotary_int {font-size: 5rem; line-height: 110%; font-weight: 700; margin-bottom: 60px;}
+.btn_normal { color:#fff; padding: 11px 30px; border-radius: 50px; font-size: 2.4rem; line-height: 2.8rem; font-weight:700; }
+.btn_normal.btn-people { background: #FFC000; }
+
+
+/* ===== 숫자로 보는 로타리 (통계) ===== */
+.stats_section { padding: 180px 0; }
+.stats_row { display:flex; justify-content: space-between; }
+.stats_left { width: 380px; flex-shrink: 0; }
+.stats_left .stats { margin-bottom: 40px; } /* 섹션 제목 마진 */
+.btn_normal.btn-primary { background: #00408F; }
+.stats_right { width: 960px; display:flex; justify-content: space-between; align-items:flex-start; }
+.stat_card { background:#F1F1F1; border-radius:30px; padding:30px; box-sizing: border-box; box-shadow: 0 6px 18px rgba(20,20,40,0.03); }
+.stat_card.big { width: calc(50% - 10px); height: 470px; position:relative; }
+.stat_card.small { height: 225px; display:flex; flex-direction:column; }
+.stat_small_grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 20px; width: calc(50% - 10px); }
+.stat_small_grid > .stat_card.small:first-child { grid-column: 1 / -1; }
+.stat_number { font-size: 3.2rem; font-weight:800; color:#000; display: flex; align-items: baseline; }
+.stat_main { font-size:8rem; line-height: 100%; font-weight: 700; }
+.stat_card.small .stat_main { font-size: 5rem; } /* 오른쪽 숫자 크기 조정 */
+.stat_suffix { font-size:2.2rem; line-height: 100%; font-weight: 500; margin-right: 4px; }
+.stat_label { margin-top:40px; font-size:1.8rem; line-height: 110%; font-weight: 500; color:#4C4C4C; }
+.stat_illu { position:absolute; right:16px; bottom:-6px; width:334px; opacity:0.95; mix-blend-mode: luminosity; }
+
+
+/* ===== 캠페인 섹션 ===== */
+.campaign_section { padding: 120px 0; background-color: #F2F7FF; }
+.section_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 40px; }
+/* 컨트롤러는 위의 것과 같음 */
+.campaign_list { display: flex; gap: 20px; }
+.campaign_card { flex: 1; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.campaign_card a { display: flex; flex-direction: column; height: 100%; }
+.campaign_card .card_text { padding: 25px; }
+.campaign_card h4 { font-size: 2rem; font-weight: 700; color: #000; margin-bottom: 10px; }
+.campaign_card p { font-size: 1.6rem; color: #495057; line-height: 1.6; }
+.campaign_card img { width: 100%; height: 200px; object-fit: cover; margin-top: auto; }
+
+
+/* ===== 기부 섹션 ===== */
+.donation_section { padding: 120px 0; }
+.donation_section .section_header { text-align: center; flex-direction: column; justify-content: center; margin-bottom: 60px; }
+.donation_section .section_title { font-size: 4.2rem; }
+.donation_section .section_desc { font-size: 1.8rem; color: #666; max-width: 500px; margin-top: 15px; }
+.donation_grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.donation_card { background: #F8F9FA; border-radius: 20px; padding: 30px; display: flex; justify-content: space-between; align-items: center; font-size: 1.8rem; font-weight: 600; color: #333; }
+.donation_card h4 { font-size: 1.8rem; font-weight: 600; }
+.donation_card i { font-size: 2rem; }
+.donation_card.featured { grid-column: 1 / 3; grid-row: 1 / 3; background: #00408F; color: #fff; flex-direction: column; align-items: flex-start; }
+.donation_card.featured .card_content { }
+.donation_card.featured h4 { font-size: 2.8rem; font-weight: 700; }
+.donation_card.featured p { font-size: 1.6rem; line-height: 1.7; margin-top: 15px; opacity: 0.9; }
+.donation_card.featured i { align-self: flex-end; margin-top: auto; background: #fff; color: #00408F; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+
+@media (max-width:1200px) {
+	.stats_row { flex-direction:column }
+	.stats_left, .stats_right { width:100% }
+}
 
 
 
