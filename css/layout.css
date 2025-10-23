@@ -17,7 +17,7 @@ a { color: #75797B; text-decoration: none; }
 
 
 
-/* 배경색 FAFAFA */
+/* 배경색 #FFF */
 /* 1440px */
 .wrap {background: #fff;}
 /* 상단메뉴 */
@@ -32,26 +32,32 @@ a { color: #75797B; text-decoration: none; }
 .site-header { background: #fff; position: relative; z-index: 20; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
 .site-header .head { display: flex; align-items: center; justify-content: space-between; height: 100%; }
 .logo img { height: 80px; display: block; }
-.gnb ul { display: flex; gap: 32px; align-items: center; }
-.gnb ul li a { color: #000; font-size: 2rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
+.gnb ul { display: flex; gap: 80px; align-items: center; }
+.gnb ul li a { color: #000; font-size: 2.5rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
 .head-right { display: flex; align-items: center; gap: 18px; }
-.head-right .icons { display: flex; gap: 10px; margin: 0; padding: 0; }
+.head-right .icons { display: flex; gap: 15px; margin: 0; padding: 0; }
 .head-right .icons li { list-style: none; }
-.head-right .icons a { color: #5570a8; font-size: 16px; display: inline-block; padding: 6px; }
+.head-right .icons a { display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border-radius: 50%; color: #00408F; font-size: 3.2rem; background: #E9F3FF;;}
+.head-right .icons i {width: 32px; height: 32px;}
+.head-right .icons .log_in { background: url('../images/log_in.png') no-repeat center; }
+.head-right .icons .search { background: url('../images/search.png') no-repeat center; }
+.head-right .icons .language { background: url('../images/language.png') no-repeat center; }
+
 .actions { display: flex; gap: 10px; align-items: center }
-.btn { display: inline-block; padding: 10px 18px; border-radius: 26px; font-size: 13px; text-decoration: none; }
-.btn-outline { border: 2px solid #cfe0ff; background: transparent; color: #2f4f9b; }
-.btn-primary { background: #2f57a8; color: #fff; }
+/* 버튼 크기 */
+.btn { display: inline-block; padding: 25px 30px; border-radius: 15px; font-size: 2.8rem; font-weight: 700; line-height: 120%; text-decoration: none; }
+.btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F; box-shadow: inset 0 0 0 2px #00408F; }
+.btn-primary { background: #00408F; color: #fff; }
 
 /* ===== Main visual / Hero ===== */
 .main_visual { position: relative; }
-.visual_slide { height: calc(100vh - 110px); /* 헤더 높이(110px) 빼고 전체 화면 */ background-image: url('../images/hero.jpg'); background-size: cover; background-position: center right; position: relative; }
-.visual-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.0) 100%); height: 840px; }
-.hero_inner { position: relative; height: 100%; display: flex; align-items: center; }
-.hero_content { width: 40%; max-width: 520px; color: #fff; }
-.hero_title { font-size: 56px; line-height: 1; font-weight: 800; margin-bottom: 18px; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
-.hero_desc { color: rgba(255,255,255,0.9); font-size: 16px; margin-bottom: 28px; }
-.btn-ghost { background: #fff; color: #2f57a8; padding: 12px 26px; border-radius: 40px; display: inline-block; font-weight: 700 }
+.visual_slide { height: calc(100vh - 110px); /* 헤더 높이(110px) 빼고 전체 화면 */ background-image: url('../images/visual_BG.jpg'); background-size: cover; background-position: center right; position: relative; }
+.visual-overlay { position: absolute; inset: 0; /* 부모 영역 전체 덮음 */ background: rgba(0,0,0,0.45); /* 균일한 반투명 단색 오버레이 */ pointer-events: none; /* 오버레이가 클릭을 막지 않음 */ z-index: 1; }
+.hero_inner { position: relative; height: 100%; display: flex; align-items: center; z-index: 2; }
+.hero_content { width: 40%; max-width: 570px; color: #fff; }
+.hero_title { font-family: 'paperlogy'; font-size: 7rem; line-height: 120%; font-weight: 800; margin-bottom: 60px; color: #fff; text-shadow: 0 6px 18px rgba(0,0,0,0.45); }
+.hero_desc { color: rgba(255,255,255,0.9); font-size: 2.6rem; font-weight: 500; line-height: 110%; margin-bottom: 110px; }
+.btn-ghost { background: #fff; color: #00408F; padding: 20px 50px; border-radius: 40px; display: inline-block; font-size: 2.4rem; line-height: 2.8rem; font-weight: 700 }
 
 /* small responsive tweaks */
 @media (max-width:1200px) {
@@ -65,3 +71,31 @@ a { color: #75797B; text-decoration: none; }
 	.visual_slide { background-position: center center; }
 	.hero_content { width: 80%; padding-left: 16px }
 }
+
+/* ===== News section (cards) ===== */
+.news_section { padding: 160px 0 180px; } /* 섹션 위,아래 여백 */
+.news_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 60px; }
+.section_title { font-family: 'paperlogy'; font-size: 4.4rem; font-weight: 700; line-height: 120%; color: #000; }
+/* <,>,+ 버튼 */
+.news_controls { display:flex; gap:15px; align-items:center }
+.news_controls .ctrl { width:46px; height:46px; border-radius:50%; border:1px solid #dfe7f5; background:#fff; color:#2f57a8; font-size:18px }
+.news_list { display:flex; gap:28px; }
+.news_card { width: 345px; border-radius: 30px; overflow: hidden; position: relative; }
+.news_card img { display:block; width:100%; height:345px; object-fit:cover }
+.card_caption { position:absolute; left:12px; bottom:12px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 110%; text-shadow:0 4px 10px rgba(0,0,0,0.6) }
+
+/* ===== People visual section ===== */
+.people_section { margin-top: 40px; }
+.people_visual { height: 420px; background-image: url('../images/people_bg.jpg'); background-size: cover; background-position: center; position: relative; display:flex; align-items:center }
+.people_visual .visual_overlay { position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%); z-index:1 }
+.people_inner { position:relative; z-index:2; color:#fff; padding: 40px 0 }
+.people_title { font-size: 36px; font-weight:800; margin-bottom:12px }
+.people_sub { font-size:16px; margin-bottom:18px; max-width:760px }
+.btn-people { background: #ffbf2f; color:#fff; padding: 12px 22px; border-radius: 24px; font-weight:800 }
+
+
+
+
+
+
+

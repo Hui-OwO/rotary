@@ -1,0 +1,28 @@
+/* url(src:%20url%28/) */
+
+@font-face {
+	font-family: 'paperlogy';
+	font-weight: 700;
+	src: url(../font/Paperlogy-7Bold.eot);
+	src: url(../font/Paperlogy-7Bold.eot?#iefix) format('embedded-opentype'),
+	url(../font/Paperlogy-7Bold.woff) format('woff'),
+	url(../font/Paperlogy-7Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'paperlogy';
+	font-weight: 800;
+	src: url(../font/Paperlogy-8ExtraBold.eot);
+	src: url(../font/Paperlogy-8ExtraBold.eot?#iefix) format('embedded-opentype'),
+	url(../font/Paperlogy-8ExtraBold.woff) format('woff'),
+	url(../font/Paperlogy-8ExtraBold.ttf) format('truetype');
+}
+
+/* @font-face {
+	font-family: 'paperlogy';
+	font-weight: 800;
+	src: url(파일명.eot);
+	src: url(파일명.eot?#iefix) format('embedded-opentype'),
+	url(파일명.woff) format('woff'),
+	url(파일명.ttf) format('truetype');
+} */
