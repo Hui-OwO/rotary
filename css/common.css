@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+
+/* 전체 정리 ctrl+A, ctrl+I */
+* { margin: 0; padding: 0; font-size: 10px; font-family: 'Pretendard', 'paperlogy'} /* 앞에 있는 폰트가 우선순위 높음. */
+html { overflow-x: hidden;}
+/* html {overflow-x: hidden; font-family: 'Pretendard-Regular'; } */
+ul li { list-style: none; }
+a { color: #75797B; text-decoration: none; }
+
+/* @charset="UTF-8" */
+/* css 리셋파일 안에 들어가는 내용임 */
+
+
+
+
+
+
+/* 배경색 #FFF */
+/* 1440px */
+.wrap {background: #fff; padding-top: 110px;}
+/* 상단메뉴 */
+
+/* ===== global container (centered content, 1440px 기준) ===== */
+.container { width: 1440px; /* 내부 폭: 1440px 디자인에서 좌우 여백을 포함해 중심 정렬 */ margin: 0 auto; position: relative; }
+
+/* 헤더 전용 컨테이너: 전체 넓이를 더 크게 사용(1780px)하지만 화면보다 클 경우 좌우 여백을 유지 */
+.site-header .container { width: 1780px; max-width: calc(100% - 40px); }
+
+/* ===== Header ===== */
+.site-header { background: #fff; position: fixed; top: 0; left: 0; right: 0; z-index: 99999999999999999999; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
+.site-header .head { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+.logo img { height: 60px; display: block; }
+.gnb ul { display: flex; gap: 80px; align-items: center; }
+.gnb ul li a { color: #000; font-size: 2.5rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
+.head-right { display: flex; align-items: center; gap: 18px; }
+.head-right .icons { display: flex; gap: 15px; margin: 0; padding: 0; }
+.head-right .icons li { list-style: none; }
+.head-right .icons a { display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border-radius: 50%; color: #00408F; font-size: 3.2rem; background: #E9F3FF;;}
+.head-right .icons i {width: 32px; height: 32px;}
+.head-right .icons .log_in { background: url('../images/log_in.png') no-repeat center; }
+.head-right .icons .search { background: url('../images/search.png') no-repeat center; }
+.head-right .icons .language { background: url('../images/language.png') no-repeat center; }
+
+.actions { display: flex; gap: 10px; align-items: center }
+/* 버튼 크기 */
+.btn { display: inline-block; padding: 20px 25px; border-radius: 15px; font-size: 2.5rem; font-weight: 700; line-height: 120%; text-decoration: none; }
+.btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F; box-shadow: inset 0 0 0 2px #00408F; }
+.btn-primary { background: #00408F; color: #fff; }
+
+
+
+
+/* ===== footer ===== */
+
+
+
+
+
+
+
+
