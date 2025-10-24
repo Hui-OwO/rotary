@@ -88,7 +88,7 @@
 
 
 /* ===== 기부 섹션 ===== */
-.donation_section { padding: 120px 0; }
+.donation_section { padding: 120px 0 160px 0; }
 .donation_section .section_header { text-align: center; flex-direction: column; justify-content: center; margin-bottom: 60px; }
 .donation_section .section_title { font-size: 4.2rem; }
 .donation_section .section_desc { font-size: 1.8rem; color: #666; max-width: 500px; margin-top: 15px; }
@@ -100,27 +100,6 @@
 .donation_card.featured h4 { font-size: 2.8rem; font-weight: 700; }
 .donation_card.featured p { font-size: 1.6rem; line-height: 1.7; margin-top: 15px; opacity: 0.9; }
 .donation_card.featured i { align-self: flex-end; margin-top: auto; background: #fff; color: #00408F; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-
-/* ===== Footer ===== */
-footer { background: #E9ECEF; padding: 20px 0 54px 0; color: #495057; }
-.footer_top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-.footer_nav ul { display: flex; gap: 40px; }
-.footer_nav a { font-size: 1.6rem; font-weight: 500; color: #495057; }
-.social_icons { display: flex; gap: 15px; }
-.social_icons a { font-size: 2rem; color: #495057; }
-footer hr { border: none; height: 2px; background: #fff; }
-.footer_bottom { margin-top: 20px; }
-.policy_links { display: flex; gap: 30px; margin-bottom: 20px; }
-.policy_links a, .policy_links a b { font-size: 1.6rem; line-height: 1.1; color: #000; }
-.policy_links a { font-weight: 400; }
-.policy_links a b { font-weight: 700; }
-.copyright { font-size: 1.4rem; color: #6C757D; }
-.end_polio_banner { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
-
-@media (max-width:1200px) {
-	.stats_row { flex-direction:column }
-	.stats_left, .stats_right { width:100% }
-}
 
 
 
