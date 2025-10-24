@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>국제 로타리</title>
 
+    
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-        <!-- font Awesome -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> <!-- 프리텐다드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> <!-- 스와이퍼 -->
+    <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/2e10de9f08.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script><!-- 11버전도 있긴함 -->
 </head>
 <body>
     <div class="wrap">
@@ -60,6 +64,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- 로타리 소식 섹션 -->
         <section class="news_section">
             <div class="container">
@@ -72,31 +77,58 @@
                     </div>
                 </div>
 
-                <div class="news_list">
-                    <article class="news_card">
-                        <a href="#">
-                            <img src="images/news1.jpg" alt="빌게이츠와 로타리안이 함께 찍은 사진">
-                            <div class="card_caption">빌게이츠와의 Q&A</div>
-                        </a>
-                    </article>
-                    <article class="news_card">
-                        <a href="#">
-                            <img src="images/news2.jpg" alt="뉴스2">
-                            <div class="card_caption">주요 모자 보건 사업에 대한<br>데이터 집계</div>
-                        </a>
-                    </article>
-                    <article class="news_card">
-                        <a href="#">
-                            <img src="images/news3.jpg" alt="뉴스3">
-                            <div class="card_caption">미니어처에 담긴 소아마비<br>퇴치의 유산</div>
-                        </a>
-                    </article>
-                    <article class="news_card">
-                        <a href="#">
-                            <img src="images/news4.jpg" alt="뉴스4">
-                            <div class="card_caption">대담: 제인 구달</div>
-                        </a>
-                    </article>
+                <!-- Swiper -->
+                <div class="swiper news_swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news01.jpg" alt="빌게이츠와의 Q&A 사진">
+                                <div class="card_caption">빌게이츠와의 Q&A</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news02.jpg" alt="모자 보건 사업 사진">
+                                <div class="card_caption">주요 모자 보건 사업에 대한<br>데이터 집계</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news03.jpg" alt="미니어처 사진">
+                                <div class="card_caption">미니어처에 담긴 소아마비<br>퇴치의 유산</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news04.jpg" alt="제인 구달의 대담 사진">
+                                <div class="card_caption">대담: 제인 구달</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news05.jpg" alt="환경 보호를 위한 나무 심기 캠페인">
+                                <div class="card_caption">소아마비 퇴치의 모든 것</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news06.jpg" alt="재난 구호 기금 마련 행사">
+                                <div class="card_caption">자립으로 가는 길</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news07.jpg" alt="문해 교육을 통한 삶의 질 개선">
+                                <div class="card_caption">글로벌 로타리 프로젝트</div>
+                            </a>
+                        </article>
+                        <article class="swiper-slide news_card">
+                            <a href="#">
+                                <img src="images/news08.jpg" alt="질문이 이끈 여정">
+                                <div class="card_caption">질문이 이끈 여정</div>
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,42 +193,82 @@
                     </div>
                 </div>
                 <div class="campaign_list">
-                    <article class="campaign_card">
-                        <a href="#">
-                            <div class="card_text">
-                                <h4>로타리 봉사의 날</h4>
-                                <p>지역사회를 개선하는 의미있고 실제적인 봉사활동을 펼칩니다.</p>
-                            </div>
-                            <img src="images/campaign1.jpg" alt="로타리 봉사의 날">
-                        </a>
-                    </article>
-                    <article class="campaign_card">
-                        <a href="#">
-                            <div class="card_text">
-                                <h4>젊은이들을 위한 기회</h4>
-                                <p>젊은이들의 잠재력 발휘, 기술 개발, 시야 넓힐 수 있는 기회를 제공합니다.</p>
-                            </div>
-                            <img src="images/campaign2.jpg" alt="젊은이들을 위한 기회">
-                        </a>
-                    </article>
-                    <article class="campaign_card">
-                        <a href="#">
-                            <div class="card_text">
-                                <h4>세계 여아의 날</h4>
-                                <p>전 세계의 소녀들을 보호하고, 힘을 실어주고, 평등을 실현하는 데 기여합니다.</p>
-                            </div>
-                            <img src="images/campaign3.jpg" alt="세계 여아의 날">
-                        </a>
-                    </article>
-                    <article class="campaign_card">
-                        <a href="#">
-                            <div class="card_text">
-                                <h4>우크라이나 난민 돕기</h4>
-                                <p>전쟁으로 피해를 입은 우크라이나 난민들에게 실질적인 도움을 제공합니다.</p>
-                            </div>
-                            <img src="images/campaign4.jpg" alt="우크라이나 난민 돕기">
-                        </a>
-                    </article>
+                    <div class="swiper campaign_swiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>로타리 봉사의 날</h4>
+                                        <p>지역사회를 개선하는 의미있고 실제적인 봉사활동을 펼칩니다.</p>
+                                    </div>
+                                    <img src="images/campaign1.jpg" alt="로타리 봉사의 날">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>젊은이들을 위한 기회</h4>
+                                        <p>젊은이들의 잠재력 발휘, 기술 개발, 시야 넓힐 수 있는 기회를 제공합니다.</p>
+                                    </div>
+                                    <img src="images/campaign2.jpg" alt="젊은이들을 위한 기회">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>세계 여아의 날</h4>
+                                        <p>전 세계의 소녀들을 보호하고, 힘을 실어주고, 평등을 실현하는 데 기여합니다.</p>
+                                    </div>
+                                    <img src="images/campaign3.jpg" alt="세계 여아의 날">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>우크라이나 난민 돕기</h4>
+                                        <p>전쟁으로 피해를 입은 우크라이나 난민들에게 실질적인 도움을 제공합니다.</p>
+                                    </div>
+                                    <img src="images/campaign4.jpg" alt="우크라이나 난민 돕기">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>로타리 봉사의 날</h4>
+                                        <p>지역사회를 개선하는 의미있고 실제적인 봉사활동을 펼칩니다.</p>
+                                    </div>
+                                    <img src="images/campaign1.jpg" alt="로타리 봉사의 날">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>젊은이들을 위한 기회</h4>
+                                        <p>젊은이들의 잠재력 발휘, 기술 개발, 시야 넓힐 수 있는 기회를 제공합니다.</p>
+                                    </div>
+                                    <img src="images/campaign2.jpg" alt="젊은이들을 위한 기회">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>세계 여아의 날</h4>
+                                        <p>전 세계의 소녀들을 보호하고, 힘을 실어주고, 평등을 실현하는 데 기여합니다.</p>
+                                    </div>
+                                    <img src="images/campaign3.jpg" alt="세계 여아의 날">
+                                </a>
+                            </article>
+                            <article class="swiper-slide campaign_card">
+                                <a href="#">
+                                    <div class="card_text">
+                                        <h4>우크라이나 난민 돕기</h4>
+                                        <p>전쟁으로 피해를 입은 우크라이나 난민들에게 실질적인 도움을 제공합니다.</p>
+                                    </div>
+                                    <img src="images/campaign4.jpg" alt="우크라이나 난민 돕기">
+                                </a>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

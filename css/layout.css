@@ -24,6 +24,18 @@
 	.hero_content { width: 80%; padding-left: 16px }
 }
 
+/* ===== Swiper ===== */
+.swiper { width: 100%; height: 100%; }
+.swiper-slide { background: #444; }
+@media (max-width:760px) {
+    .swiper-button-next { right: 20px; transform: rotate(90deg); }
+    .swiper-button-prev { left: 20px; transform: rotate(90deg); }
+}
+
+
+
+
+
 /* ===== 로타리 소식 섹션 (cards) ===== */
 .news_section { padding: 160px 0 180px; } /* 섹션 위,아래 여백 */
 .news_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 40px; }
@@ -36,7 +48,8 @@
 .controller .ctrl.next { border: none; background: #1354A5; color: #fff; }
 .controller .ctrl.more { background: #ffffff; color: #00408F; border: 2px solid #ADD2FF; }
 
-.news_list { display:flex; gap:28px; }
+.news_swiper { overflow: visible; /* 그림자가 잘리지 않도록 */ }
+.news_list { display:flex; gap:20px; }
 .news_card { width: 345px; border-radius: 30px; overflow: hidden; position: relative; }
 .news_card img { display:block; width:100%; height:345px; object-fit:cover }
 .card_caption { position:absolute; left:25px; top:265px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 140%; text-shadow:0 4px 10px rgba(0,0,0,0.6) }
@@ -78,8 +91,9 @@
 .campaign_section { padding: 120px 0 140px 0; background-color: #F2F7FF; }
 .section_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 40px; }
 /* 컨트롤러는 위의 것과 같음 */
+.campaign_swiper { overflow: visible; }
 .campaign_list { display: flex; gap: 20px; }
-.campaign_card { flex: 1; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 12px #00408F20; }
+.campaign_card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 12px #00408F20; }
 .campaign_card a { display: flex; flex-direction: column; height: 100%; }
 .campaign_card .card_text {height: 190px; padding: 30px; box-sizing: border-box; }
 .campaign_card h4 { font-size: 2.8rem; line-height: 1.1; font-weight: 700; color: #000; margin-bottom: 20px; }
