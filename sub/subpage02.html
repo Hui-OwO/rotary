@@ -6,13 +6,15 @@
     <title>국제 로타리</title>
 
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/subpage02.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-        <!-- font Awesome -->
+    <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/2e10de9f08.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script><!-- 11버전도 있긴함 -->
 </head>
 <body>
     <div class="wrap">
@@ -26,7 +28,7 @@
                 <nav class="gnb">
                     <ul>
                         <li><a href="subpage01.html">로타리란?</a></li>
-                        <li><a href="subpage02.html">활동</a></li>
+                        <li class="active"><a href="subpage02.html">활동</a></li>
                         <li><a href="#">참여</a></li>
                         <li><a href="#">소식</a></li>
                         <li><a href="#">내 로타리</a></li>
@@ -47,15 +49,89 @@
             </div>
         </header>
 
+        <!-- 서브 비주얼 -->
+        <section class="sub_visual history_visual">
+            <div class="sub_visual_content">
+                <h2>수자원 및 위생 개선</h2>
+            </div>
+        </section>
 
+        <div class="container">
+            <div class="sub_content">
+                <h3 class="sub_title">수자원 및 위생 개선</h3>
+                <div class="breadcrumb">
+                    <a href="../index.html" class="home" title="홈"><i class="fa-solid fa-house"></i></a>
+                    <span class="separator"></span>
+                    <a href="#">활동</a>
+                    <span class="separator"></span>
+                    <a href="#">7대 초점분야</a>
+                    <span class="separator"></span>
+                    <a href="#">수자원 및 위생 개선</a>
+                </div>
+            </div>
 
+            <div class="action_section">
+                <div class="container">
+                    <div class="info_box">
+                        <div class="info_text">
+                            <h4>깨끗한 물, 위생 시설, 그리고 위생 교육은 건강한 환경과 생산적인 삶을 위한 기본적인 필수 요소입니다.</h4>
+                            <p>사람들이 깨끗한 물과 위생 시설을 이용할 수 있게 되면, 수인성 질병은 감소하고, 아이들은 더 건강하게 학교에 꾸준히 다니게 되며,<br>어머니들은 물을 길어오는 시간을 줄이고 가족을 돌보는 데 더 많은 시간을 쓸 수 있습니다.</p>
+                        </div>
+                        <div class="info_img">
+                            <img src="../images/water_illust.png" alt="물 일러스트">
+                        </div>
+                    </div>
 
-
-
-
-
-
-
+                    <div class="action_slider">
+                        <div class="action_slider_title">
+                            <h3>로타리는 어떻게 도움을 실현하는가</h3>
+                            <p>로타리의 행동가들은 물, 위생 시설, 및 위생 교육(WASH) 프로그램을 통해 자원을 동원하고, 파트너십을 형성하며, 장기적인 변화를 낳는 사회 기반 시설과 교육에 투자합니다.</p>
+                        </div>
+                        <div class="swiper_container">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/action01.jpg" alt="더 건강한 학교 만들기">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>더 건강한 학교 만들기</h4>
+                                                <p>레바논의 모든 로타리클럽이 정부 및 국제기구와 협력하여, 국가 내 모든 공립학교에 깨끗한 물을 공급하는 프로그램을 개발했습니다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/action02.jpg" alt="지역사회를 위한 물">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>지역사회를 위한 물</h4>
+                                                <p>파푸아뉴기니에서 현지 단체와 협력하여 4,000명의 주민을 위한 빗물 집수 및 공급 시설을 설치하고, 지역사회 여성과 학생들을 대상으로 교육을 진행했습니다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/action03.jpg" alt="과테말라 학교의 위생 환경 개선">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>과테말라 학교의 위생 환경 개선</h4>
+                                                <p>과테말라 에스쿠인틀라 지역 10개 학교에 화장실, 세면대, 물탱크 등을 제공하고 위생 교육을 실시하여 약 1,800명 어린이들의 환경을 개선했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- 푸터 -->
         <footer>
@@ -92,5 +168,12 @@
             </div>
         </footer>
     </div>
+    <button type="button" id="scrollTopBtn" title="맨 위로 이동">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="28" cx="30" cy="30"/>
+            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="28" cx="30" cy="30"/>
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 </html>

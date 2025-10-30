@@ -26,18 +26,19 @@ a { color: #75797B; text-decoration: none; }
 .container { width: 1440px; /* 내부 폭: 1440px 디자인에서 좌우 여백을 포함해 중심 정렬 */ margin: 0 auto; position: relative; }
 
 /* 헤더 전용 컨테이너: 전체 넓이를 더 크게 사용(1780px)하지만 화면보다 클 경우 좌우 여백을 유지 */
-.site-header .container { width: 1780px; max-width: calc(100% - 40px); }
+.site-header .container { width: 1720px; max-width: calc(100% - 40px); }
 
 /* ===== Header ===== */
 .site-header { background: #fff; position: fixed; top: 0; left: 0; right: 0; z-index: 99999999999999999999; box-shadow: 0 1px 0 rgba(0,0,0,0.06); height: 110px;/* 헤더 높이 */ }
 .site-header .head { display: flex; align-items: center; justify-content: space-between; height: 100%; }
 .logo img { height: 60px; display: block; }
-.gnb ul { display: flex; gap: 80px; align-items: center; }
-.gnb ul li a { color: #000; font-size: 2.5rem; font-weight: 700; line-height: 120%; /* padding: 8px 0; */ }
-.head-right { display: flex; align-items: center; gap: 18px; }
-.head-right .icons { display: flex; gap: 15px; margin: 0; padding: 0; }
+.gnb ul { display: flex; gap: 60px; align-items: center; }
+.gnb ul li a { color: #000; font-size: 2.2rem; font-weight: 700; line-height: 1.2; /* padding: 8px 0; */ }
+.gnb ul li.active a { color: #0067C8; } /* gnb 색상 변경 */
+.head-right { display: flex; align-items: center; gap: 20px; }
+.head-right .icons { display: flex; gap: 5px; margin: 0; padding: 0; }
 .head-right .icons li { list-style: none; }
-.head-right .icons a { display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border-radius: 50%; color: #00408F; font-size: 3.2rem; background: #E9F3FF;;}
+.head-right .icons a { display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border-radius: 50%; color: #00408F; font-size: 3.2rem; }
 .head-right .icons i {width: 32px; height: 32px;}
 .head-right .icons .log_in { background: url('../images/log_in.png') no-repeat center; }
 .head-right .icons .search { background: url('../images/search.png') no-repeat center; }
@@ -45,7 +46,7 @@ a { color: #75797B; text-decoration: none; }
 
 .actions { display: flex; gap: 10px; align-items: center }
 /* 버튼 크기 */
-.btn { display: inline-block; padding: 20px 25px; border-radius: 15px; font-size: 2.5rem; font-weight: 700; line-height: 120%; text-decoration: none; }
+.btn { display: inline-block; padding: 15px 20px; border-radius: 15px; font-size: 2.2rem; font-weight: 700; line-height: 120%; text-decoration: none; }
 .btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F; box-shadow: inset 0 0 0 2px #00408F; }
 .btn-primary { background: #00408F; color: #fff; }
 
@@ -69,9 +70,16 @@ footer hr { border: none; height: 2px; background: #fff; }
 .copyright { font-size: 1.6rem; color: #4c4c4c; }
 .end_polio_banner { position: absolute; right: 0; bottom: 1px; }
 
+/* ===== Scroll Top Button ===== */
+#scrollTopBtn { position: fixed; bottom: 40px; right: 40px; width: 60px; height: 60px; border-radius: 50%; background-color: #fff; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); cursor: pointer; display: none; /* 기본적으로 숨김 */ justify-content: center; align-items: center; z-index: 1000; transition: opacity 0.3s, visibility 0.3s; }
+#scrollTopBtn i { font-size: 20px; color: #333; }
+.progress-ring { position: absolute; top: 0; left: 0; transform: rotate(-90deg); /* 원이 위에서부터 채워지도록 회전 */}
+.progress-ring__circle-bg { stroke: #eee; }
+.progress-ring__circle { stroke: #0067C8; stroke-linecap: round; /* 라인 끝을 둥글게 */ transition: stroke-dashoffset 0.1s; transform: scale(1); transform-origin: 50% 50%; }
+
 @media (max-width:1200px) {
-	.stats_row { flex-direction:column }
-	.stats_left, .stats_right { width:100% }
+	.stats_row { flex-direction: column }
+	.stats_left, .stats_right { width: 100% }
 }
 
 

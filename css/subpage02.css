@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* ===== Sub Visual ===== */
+.sub_visual { height: 300px; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; }
+.sub_visual::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
+.sub_visual_content { position: relative; text-align: center; color: #fff; }
+.sub_visual_content h2 { font-family: 'paperlogy'; font-size: 6rem; font-weight: 700; }
+.history_visual { background-image: url('../images/water_bg.jpg'); }
+
+/* ===== Breadcrumb ===== */
+.breadcrumb { display: flex; align-items: center; gap: 15px; padding-top: 15px; font-size: 1.6rem; color: #888; margin-bottom: 80px;}
+.breadcrumb .separator { width: 6px; height: 6px; background-color: #D9D9D9; border-radius: 50%; }
+.breadcrumb i {font-size: 1.8rem;}
+.breadcrumb a { font-size: 1.8rem; line-height: 1.2; font-weight: 400; color: #6D6D6D; }
+.breadcrumb a:hover { color: #00408F; }
+.breadcrumb .home i { font-size: 1.8rem; }
+.breadcrumb a:last-child { font-weight: 700; color: #000; }
+
+/* ===== Sub Content ===== */
+/* .sub_content { padding-bottom: 200px; } */ /* 전체 컨텐츠 영역의 아래쪽 여백 */
+.sub_title {font-family: 'paperlogy'; font-size: 4.6rem; font-weight: 700; line-height: 1.1; color: #000; margin-top: 80px; }
+
+/* ===== Action Section ===== */
+/* .action_section { padding: 100px 0; } */
+.info_box { width: 100%; height: 370px; display: flex; position: relative; background-color: #EAF2FF; border-radius: 20px; padding: 50px; box-sizing: border-box; margin-bottom: 120px; }
+.info_text h4 { font-size: 2.4rem; font-weight: 700; color: #0B126E; margin-bottom: 15px; line-height: 1.6; }
+.info_text p { font-size: 1.8rem; color: #202891; line-height: 1.6; }
+.info_img { position: absolute; top: 25px; right: 25px; width: 408px; height: 327px; }
+
+.action_slider_title { text-align: center; margin-bottom: 50px; }
+.action_slider_title h3 { font-size: 3.6rem; font-weight: 700; color: #00408F; margin-bottom: 15px; }
+.action_slider_title p { font-size: 1.8rem; color: #555; }
+
+.swiper_container { position: relative; }
+.swiper { width: 100%; height: 100%; }
+.swiper-slide { text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center; }
+.card_item { border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); background-color: #fff; }
+.card_img img { width: 100%; display: block; }
+.card_text { padding: 25px; text-align: left; }
+.card_text h4 { font-size: 2rem; font-weight: 700; color: #333; margin-bottom: 10px; }
+.card_text p { font-size: 1.6rem; color: #666; line-height: 1.5; }
+
+.swiper-button-next, .swiper-button-prev { color: #00408F !important; }
+.swiper-button-next::after, .swiper-button-prev::after { font-size: 2.4rem !important; font-weight: 700 !important; }
+
+
+
+

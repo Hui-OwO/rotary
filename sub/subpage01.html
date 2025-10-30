@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>국제 로타리</title>
+    <title>로타리 역사 | 국제 로타리</title>
 
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/subpage01.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
-        <!-- font Awesome -->
+    <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/2e10de9f08.js" crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script><!-- 11버전도 있긴함 -->
 </head>
 <body>
     <div class="wrap">
@@ -25,7 +27,7 @@
 
                 <nav class="gnb">
                     <ul>
-                        <li><a href="subpage01.html">로타리란?</a></li>
+                        <li class="active"><a href="subpage01.html">로타리란?</a></li>
                         <li><a href="subpage02.html">활동</a></li>
                         <li><a href="#">참여</a></li>
                         <li><a href="#">소식</a></li>
@@ -47,13 +49,184 @@
             </div>
         </header>
 
+        <!-- 서브 비주얼 -->
+        <section class="sub_visual history_visual">
+            <div class="sub_visual_content">
+                <h2>로타리 역사</h2>
+            </div>
+        </section>
 
+        <div class="container">
+            <div class="sub_content">
+                <h3 class="sub_title">로타리 역사</h3>
+                <div class="breadcrumb">
+                    <a href="../index.html" class="home" title="홈"><i class="fa-solid fa-house"></i></a>
+                    <span class="separator"></span>
+                    <a href="#">로타리란?</a>
+                    <span class="separator"></span>
+                    <a href="#">연혁/조직</a>
+                    <span class="separator"></span>
+                    <a href="#">로타리 역사</a>
+                </div>
 
+                <div class="history_section founder">
+                    <div class="history_img">
+                        <img src="../images/paul_harris.jpg" alt="창립자 폴 해리스">
+                    </div>
+                    <div class="history_text">
+                        <p class="founder"><span>창립자</span> 폴 해리스</p>
+                        <p>로타리는 폴 해리스라는 한 사람의 비전에서 시작되었습니다. 시카고의 변호사였던 그는 다양한 배경의 전문직업인들이 서로 아이디어를 교환하고 의미 있는 평생의 우정을 쌓을 수 있도록, 1905년 2월 23일 시카고 로타리클럽을 창립했습니다.<br><br>
+                        시간이 흐르면서 로타리의 활동 범위와 비전은 점차 인도주의적 봉사로까지 확장되었습니다. 회원들은 자신들의 지역사회와 전 세계의 난제들을 해결해 온 오랜 역사를 가지고 있습니다.</p>
+                        <blockquote class="quote">
+                            "로타리가 우리에게 어떤 의미이든, 세상은 로타리가 이뤄내는 결과로 우리를 알게 될 것입니다."
+                            <span>- 폴 해리스 -</span>
+                        </blockquote>
+                    </div>
+                </div>
 
+                <div class="history_section commitment">
+                    <div class="history_text">
+                        <h4>우리의 계속되는 헌신</h4>
+                        <p>그 헌신은 오늘날 진정한 국제 단체로 자리 잡은 우리 조직을 통해 계속 이어지고 있습니다. 창립된 지 불과 16년 만에, 로타리는 6개 대륙에 클럽을 두게 되었습니다. 이제 우리 회원들은 전 세계로 뻗어 나가, 세계의 가장 어려운 난제들을 해결하기 위해 노력하고 있습니다.<br><br>
+                        우리는 큰 꿈을 꾸고 대담한 목표를 세우는 것을 두려워하지 않습니다. 우리는 1979년 필리핀의 600만 어린이에게 예방접종을 하는 프로젝트를 시작으로 소아마비와의 싸움을 시작했습니다
+                    </div>
+                    <div class="history_img_group">
+                        <figure>
+                            <img src="../images/history_photo1.jpg" alt="1921년, 스코틀랜드 에든버러에서 열린 세계대회">
+                            <figcaption>1921년, 스코틀랜드 에든버러에서 열린 세계대회</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/history_photo2.jpg" alt="1979년, 필리핀 어린이에게 소아마비 백신을 예방접종 하는 장면">
+                            <figcaption>1979년, 필리핀 어린이에게<br>소아마비 백신을 예방접종 하는 장면</figcaption>
+                        </figure>
+                    </div>
+                </div>
 
+                <div class="timeline_section">
+                    <h4>로타리의 연혁</h4>
+                    <p>140만 명의 우리 회원들은 지역사회 리더, 친구, 그리고 파트너들과 함께 전 세계의 난제들을 해결하는 글로벌 네트워크에 동참하고 있습니다.</p>
+                    <div class="timeline">
+                        <div class="timeline_row">
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline01.jpg" alt="로타리의 창립">
+                                        <h5>로타리의 창립</h5>
+                                        <p>1905-1911</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline02.jpg" alt="성장과 확장">
+                                        <h5>성장과 확장</h5>
+                                        <p>1912-1930</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline03.jpg" alt="리더 육성">
+                                        <h5>리더 육성</h5>
+                                        <p>1931-1957</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="timeline_row">
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline04.jpg" alt="글로벌 봉사">
+                                        <h5>글로벌 봉사</h5>
+                                        <p>1958-1984</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline05.jpg" alt="대담한 목표 설정">
+                                        <h5>대담한 목표 설정</h5>
+                                        <p>1985-2004</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="timeline_item">
+                                <a href="#">
+                                    <div class="timeline_item_content">
+                                        <img src="../images/timeline06.jpg" alt="영향력 집중">
+                                        <h5>영향력 집중</h5>
+                                        <p>2005-현재</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
 
+        <div class="more_history_section">
+            <div class="container">
+                <h4>계속되는 로타리의 역사</h4>
+                <p>우리는 모든 프로젝트를 통해 세상을 더 나은 곳으로 만들고 있습니다. 아래의 이야기들은 로타리의 기틀을 다진 인물들과 사건들을 보여주는<br>역사 기록, 유품, 그리고 사진들을 통해 우리 조직이 어떻게 발전해왔는지 그 과정을 들려줍니다.</p>
+                <div class="history_card_list">
+                    <article class="history_card">
+                        <img src="../images/more_history01.jpg" alt="로타리의 공식 모토">
+                        <div class="card_text">
+                            <h5>로타리의 공식 모토</h5>
+                            <p>‘초아의 봉사(Service Above Self)’와 ‘가장 훌륭히 봉사하는 사람이 가장 많은 것을 얻는다(One Profits Most Who Serves Best)’는 로타리 조직의 초창기부터 이어져 왔습니다.</p>
+                        </div>
+                    </article>
+                    <article class="history_card">
+                        <img src="../images/more_history02.jpg" alt="로타리 소아마비 퇴치 활동의 시작">
+                        <div class="card_text">
+                            <h5>로타리 소아마비 퇴치 활동의 시작</h5>
+                            <p>1979년, 로타리는 필리핀에서 600만 명의 어린이에게 소아마비 예방접종을 하는 프로젝트를 시작했습니다. 이 노력의 성공은 로타리가 소아마비 퇴치를 최우선 과제로 삼는 계기가 되었습니다.</p>
+                        </div>
+                    </article>
+                    <article class="history_card">
+                        <img src="../images/more_history03.jpg" alt="남아메리카 로타리의 시작">
+                        <div class="card_text">
+                            <h5>남아메리카 로타리의 시작</h5>
+                            <p>로타리의 세계적인 확장은 일찍이 시작되었습니다. 1919년 2월 우루과이 몬테비데오 로타리클럽이 인가되면서 로타리는 남아메리카에 진출하게 되었습니다.</p>
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="btn_more">더보기<i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
 
+        <div class="container">
+            <div class="archive_section">
+                <div class="archive_img_group">
+                    <figure>
+                        <img src="../images/archive01.jpg" alt="원 로타리 센터(국제로타리 세계본부)">
+                        <figcaption>원 로타리 센터(국제로타리 세계본부)</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/archive02.jpg" alt="로타리 기록 보관소가 소장한 빛바랜 방명록">
+                        <figcaption>로타리 기록 보관소가 소장한 빛바랜 방명록</figcaption>
+                    </figure>
+                </div>
+                <div class="archive_text">
+                    <h4>로타리 기록 보관소 방문하기</h4>
+                    <p>미국 일리노이주 에번스턴에 위치한 원 로타리 센터의 로타리 자료실에는 우리의 유산을 담고 있는 수만 점의 사진, 녹음 자료, 출판물, 그리고 유물이 있습니다. 연구를 진행하고 계신가요? 로타리 회원, 직원, 그리고 일반 대중 누구나 예약을 통해 자료실을 방문할 수 있습니다. 우리가 수집하는 자료는 무엇인지, 여러분께 어떤 도움을 드릴 수 있는지, 그리고 자료 열람을 위한 예약 방법에 대해 자세히 알아보세요.</p>
+                    <a href="#" class="btn_outline_blue">방문 예약하기 <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <section class="cta_section">
+            <div class="container">
+                <h4>로타리와 함께 새로운 역사를 만들어갈 준비가 되셨나요?</h4>
+                <a href="#" class="btn btn-primary">참여하기</a>
+            </div>
+        </section>
 
         <!-- 푸터 -->
         <footer>
@@ -90,5 +263,12 @@
             </div>
         </footer>
     </div>
+    <button type="button" id="scrollTopBtn" title="맨 위로 이동">
+        <svg class="progress-ring" width="60" height="60">
+            <circle class="progress-ring__circle-bg" stroke-width="4" fill="transparent" r="28" cx="30" cy="30"/>
+            <circle class="progress-ring__circle" stroke-width="4" fill="transparent" r="28" cx="30" cy="30"/>
+        </svg>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </body>
 </html>

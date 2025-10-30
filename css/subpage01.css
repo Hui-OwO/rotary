@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+/* ===== Sub Visual ===== */
+.sub_visual { height: 300px; background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center; }
+.sub_visual::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
+.sub_visual_content { position: relative; text-align: center; color: #fff; }
+.sub_visual_content h2 { font-family: 'paperlogy'; font-size: 6rem; font-weight: 700; }
+.history_visual { background-image: url('../images/history_bg.jpg'); }
+
+/* ===== Breadcrumb ===== */
+.breadcrumb { display: flex; align-items: center; gap: 15px; padding-top: 15px; font-size: 1.6rem; color: #888; margin-bottom: 80px;}
+.breadcrumb .separator { width: 6px; height: 6px; background-color: #D9D9D9; border-radius: 50%; }
+.breadcrumb i {font-size: 1.8rem;}
+.breadcrumb a { font-size: 1.8rem; line-height: 1.2; font-weight: 400; color: #6D6D6D; }
+.breadcrumb a:hover { color: #00408F; }
+.breadcrumb .home i { font-size: 1.8rem; }
+.breadcrumb a:last-child { font-weight: 700; color: #000; }
+
+/* ===== Sub Content ===== */
+/* .sub_content { padding-bottom: 200px; } */ /* 전체 컨텐츠 영역의 아래쪽 여백 */
+.sub_title {font-family: 'paperlogy'; font-size: 4.6rem; font-weight: 700; line-height: 1.1; color: #000; margin-top: 80px; }
+.history_section { display: flex; gap: 60px; margin-bottom: 114px; }
+.history_section .history_img { width: 290px; flex-shrink: 0; }
+.history_section .history_img img { width: 100%; height: 360px; border-radius: 30px; }
+.history_section .history_text { width: 77%; }
+.history_text .founder, .history_text .founder > span { display: flex; font-size: 2.4rem; line-height: 1.3; color: #000; }
+.history_text .founder { font-weight: 700; margin-bottom: 25px; }
+.history_text .founder > span { font-weight: 400; margin-right: 10px; }
+.history_text p { font-size: 1.8rem; line-height: 1.6; color: #3C3C3C; }
+.history_section .quote { margin-top: 40px; padding-left: 25px; border-left: 3px solid #00408F; font-size: 2rem; font-weight: 700; color: #3C3C3C; line-height: 1.6; }
+.history_section .quote span { display: block; margin-top: 15px; font-size: 1.6rem; font-weight: 400; color: #3C3C3C; text-align: right; }
+
+/* .history_section.commitment { align-items: center; } */
+.history_section.commitment .history_text { width: 660px; }
+.history_section.commitment .history_img_group { width: 720px; display: flex; gap: 60px; }
+.history_img_group figure { height: 300px; }
+.history_img_group img { width: 100%; border-radius: 30px; margin-bottom: 10px; }
+.history_img_group figcaption { font-size: 1.5rem; color: #666; line-height: 1.5; text-align: center; }
+
+.history_text h4{ display: flex; font-size: 3.2rem; line-height: 1.6; font-weight: 700; margin-bottom: 20px; color: #0067C8; }
+
+/* ===== Timeline Section ===== */
+.timeline_section { padding-bottom: 120px; }
+.timeline_section h4 { font-size: 3.2rem; font-weight: 700; color: #0067C8; margin-bottom: 20px; }
+.timeline_section > p { font-size: 1.8rem; color: #3C3C3C; margin-bottom: 60px; }
+.timeline_row { display: flex; justify-content: center; gap: 160px; margin-bottom: 50px; position: relative; }
+.timeline_row::before { content: ''; width: 800px; position: absolute; top: 219px; left: 23%; right: 14%; height: 2px; background: #ddd; }/* 타임라인 줄 */
+.timeline_row:last-child { margin-bottom: 0; }
+.timeline_item { width: 240px; text-align: center; position: relative; }
+.timeline_item_content { position: relative; }
+.timeline_item_content::before { content: ''; position: absolute; top: 212px; left: 50%; transform: translateX(-50%); width: 16px; height: 16px; border-radius: 50%; background: #0067C8; z-index: 2; } /* 작은 원 */
+.timeline_item_content::after { content: ''; position: absolute; top: 200px; left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; background: #fff; border: 2px solid #D9D9D9; box-sizing: border-box; z-index: 1; } /* 원 */
+.timeline_item img { width: 240px; height: 180px; object-fit: cover; border-radius: 30px; margin-bottom: 80px; }
+.timeline_item h5 { font-size: 1.8rem; font-weight: 700; line-height: 1.6; color: #000; /* margin-bottom: 10px; */ }
+.timeline_item p { font-size: 1.6rem; line-height: 1.6; color: #3C3C3C; }
+.timeline_item a:hover h5 { text-decoration: underline; } /* 타임라인 아이템 호버 효과 */
+
+/* ===== More History Section ===== */
+.more_history_section { background: #F2F7FF; padding: 120px 0; text-align: center; }
+.more_history_section h4 { font-size: 3.2rem; font-weight: 700; color: #0067C8; margin-bottom: 20px; }
+.more_history_section > .container > p { font-size: 1.8rem; color: #3C3C3C; margin-bottom: 60px; }
+.history_card_list { width: 1220px; display: flex; justify-content: space-between; gap: 40px; margin: 0 auto 40px; }
+.history_card { width: 33.33%; height: 460px; background: #fff; border-radius: 30px; overflow: hidden; box-shadow: 2px 4px 10px 0 #00408F30; text-align: left; }
+
+.history_card img { width: 100%; height: 240px; object-fit: cover; } /* 사진 크기 */
+.history_card .card_text { padding: 30px; }
+.history_card h5 { font-size: 2.2rem; font-weight: 700; color: #000; margin-bottom: 20px; }
+.history_card p { font-size: 1.6rem; font-weight: 400; line-height: 1.6; color: #3C3C3C; }
+.btn_more, .btn_outline_blue { display: inline-block; background: #fff; border: 2px solid #ADD2FF; border-radius: 30px; padding: 13px 20px; box-sizing: border-box; font-size: 2.2rem; font-weight: 400; line-height: 1; color: #0067C8; cursor: pointer; }
+.btn_more i { font-size: 2.2rem; color: #00408F; margin-left: 10px; }
+
+/* ===== Archive Section ===== */
+.archive_section { display: flex; align-items: center; gap: 50px; padding: 120px 0; }
+.archive_img_group { width: 740px; display: flex; justify-content: space-between; gap: 50px; }
+.archive_img_group figure { height: 300px; } /* 사진 크기 */
+.archive_img_group img { width: 100%; height: 100%; border-radius: 30px; margin-bottom: 10px; }
+.archive_img_group figcaption { font-size: 1.5rem; color: #666; line-height: 1.5; text-align: center; }
+.archive_text { width: 45%; }
+.archive_text h4 { font-size: 3.2rem; font-weight: 700; color: #0067C8; margin-bottom: 20px; }
+.archive_text p { font-size: 1.8rem; line-height: 1.6; color: #3C3C3C; margin-bottom: 45px; }
+.btn_outline_blue i { font-size: 2.2rem; color: #00408F; margin-left: 5px; }
+
+/* ===== CTA Section ===== */
+.cta_section { background: #fff; padding: 130px 0 220px 0; text-align: center; }
+.cta_section h4 { font-size: 3.2rem; font-weight: 400; line-height: 1.6; color: #3C3C3C; margin-bottom: 30px; }
+.cta_section .btn-primary { border-radius: 30px; padding: 15px 40px; font-size: 2.4rem; line-height: 1.15; }
+
+
+
+
+
+
+
