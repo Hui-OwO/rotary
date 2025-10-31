@@ -54,20 +54,20 @@ a { color: #75797B; text-decoration: none; }
 
 
 /* ===== footer ===== */
-footer { background: #c9c9c9; padding: 20px 0 54px 0; }
+footer { background: #2A2A2A; padding: 20px 0 54px 0; }
 .footer_top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
 .footer_nav ul { display: flex; gap: 40px; }
-.footer_nav a { font-size: 1.6rem; font-weight: 400; color: #4c4c4c; }
+.footer_nav a { font-size: 1.6rem; font-weight: 400; color: #C9C9C9; }
 .social_icons { display: flex; gap: 15px; }
-.social_icons a { color: #000; }
+.social_icons a { color: #fff; }
 .social_icons i { font-size: 2.4rem; }
 footer hr { border: none; height: 2px; background: #fff; }
 .footer_bottom { margin-top: 20px; }
 .policy_links { display: flex; gap: 30px; margin-bottom: 80px; }
-.policy_links a, .policy_links a b { font-size: 1.6rem; line-height: 1.1; color: #000; }
+.policy_links a, .policy_links a b { font-size: 1.6rem; line-height: 1.1; color: #fff; }
 .policy_links a { font-weight: 400; }
 .policy_links a b { font-weight: 700; }
-.copyright { font-size: 1.6rem; color: #4c4c4c; }
+.copyright { font-size: 1.6rem; color: #C9C9C9; }
 .end_polio_banner { position: absolute; right: 0; bottom: 1px; }
 
 /* ===== Scroll Top Button ===== */
