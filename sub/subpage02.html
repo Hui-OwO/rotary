@@ -12,9 +12,11 @@
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <script src="https://kit.fontawesome.com/2e10de9f08.js" crossorigin="anonymous"></script>
+    
+    <!-- Swiper JS 라이브러리를 먼저 로드합니다. -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- 그 다음에 Swiper를 사용하는 script.js를 로드합니다. -->
     <script src="../js/script.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script><!-- 11버전도 있긴함 -->
 </head>
 <body>
     <div class="wrap">
@@ -85,15 +87,21 @@
                     <div class="action_slider">
                         <div class="section_header">
                             <h3>로타리는 어떻게 도움을 실현하는가</h3>
+                            <!-- 컨트롤러 위치 이동 -->
                             <div class="controller action_ctrls">
-                                <button type="button" class="ctrl prev" aria-label="이전"><i class="fa-solid fa-angle-left"></i></button>
-                                <button type="button" class="ctrl next" aria-label="다음"><i class="fa-solid fa-angle-right"></i></button>
+                                <button type="button" class="ctrl prev" aria-label="이전"><i
+                                        class="fa-solid fa-angle-left"></i></button>
+                                <button type="button" class="ctrl next" aria-label="다음"><i
+                                        class="fa-solid fa-angle-right"></i></button>
                             </div>
                         </div>
-                        <p class="slider_desc">로타리의 행동가들은 물, 위생 시설, 및 위생 교육(WASH) 프로그램을 통해 자원을 동원하고, 파트너십을 형성하며, 장기적인 변화를 낳는 사회 기반 시설과 교육에 투자합니다.</p>
+                        <p class="slider_desc">로타리의 행동가들은 물, 위생 시설, 및 위생 교육(WASH) 프로그램을 통해 자원을 동원하고, 파트너십을 형성하며, 장기적인
+                        변화를 낳는 사회 기반 시설과 교육에 투자합니다.</p>
+
                         <div class="swiper_container">
                             <div class="swiper action_swiper">
                                 <div class="swiper-wrapper">
+                                    <!-- 실제 슬라이드 5개만 남깁니다 -->
                                     <div class="swiper-slide">
                                         <div class="card_item">
                                             <div class="card_img">
@@ -101,7 +109,9 @@
                                             </div>
                                             <div class="card_text">
                                                 <h4>더 건강한 학교 만들기</h4>
-                                                <p>레바논의 모든 로타리클럽이 정부 및 국제기구와 협력하여, 국가 내 모든 공립학교에 깨끗한 물을 공급하는 프로그램을 개발했습니다</p>
+                                                <p>레바논의 모든 로타리클럽이 정부 및 국제기구와 협력하여, 국가 내 모든 공립학교에 깨끗한 물을 공급하는 프로그램을
+                                                    개발했습니다
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +122,8 @@
                                             </div>
                                             <div class="card_text">
                                                 <h4>지역사회를 위한 물</h4>
-                                                <p>파푸아뉴기니에서 현지 단체와 협력하여 4,000명의 주민을 위한 빗물 집수 및 공급 시설을 설치하고, 지역사회 여성과 학생들을 대상으로 교육을 진행했습니다</p>
+                                                <p>파푸아뉴기니에서 현지 단체와 협력하여 4,000명의 주민을 위한 빗물 집수 및 공급 시설을 설치하고, 지역사회 여성과
+                                                    학생들을 대상으로 교육을 진행했습니다</p>
                                             </div>
                                         </div>
                                     </div>
@@ -123,12 +134,101 @@
                                             </div>
                                             <div class="card_text">
                                                 <h4>과테말라 학교의 위생 환경 개선</h4>
-                                                <p>과테말라 에스쿠인틀라 지역 10개 학교에 화장실, 세면대, 물탱크 등을 제공하고 위생 교육을 실시하여 약 1,800명 어린이들의 환경을 개선했습니다.</p>
+                                                <p>과테말라 에스쿠인틀라 지역 10개 학교에 화장실, 세면대, 물탱크 등을 제공하고 위생 교육을 실시하여 약 1,800명
+                                                    어린이들의 환경을 개선했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action04.jpg" alt="과테말라 학교의 위생 환경 개선">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>탄자니아의 물 공급</h4>
+                                                <p>탄자니아 키고고 마을에 1,500명을 위한 상수도 공급 시스템을 구축하고, 주민들에게 시스템 유지보수 방법과 위생 교육을
+                                                    제공했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action05.jpg" alt="필리핀의 화장실 보급">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>필리핀의 화장실 보급</h4>
+                                                <p>필리핀에 화장실 222개와 빗물 집수 장치, 정수기 등을 설치하여 1,000명 이상에게 위생적인 화장실을, 약 600명에게
+                                                    깨끗한 물을 제공했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 슬라이드 하나 추가 -->
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action01.jpg" alt="더 건강한 학교 만들기">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>더 건강한 학교 만들기</h4>
+                                                <p>레바논의 모든 로타리클럽이 정부 및 국제기구와 협력하여, 국가 내 모든 공립학교에 깨끗한 물을 공급하는 프로그램을
+                                                    개발했습니다
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action02.jpg" alt="지역사회를 위한 물">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>지역사회를 위한 물</h4>
+                                                <p>파푸아뉴기니에서 현지 단체와 협력하여 4,000명의 주민을 위한 빗물 집수 및 공급 시설을 설치하고, 지역사회 여성과
+                                                    학생들을 대상으로 교육을 진행했습니다</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action03.jpg" alt="과테말라 학교의 위생 환경 개선">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>과테말라 학교의 위생 환경 개선</h4>
+                                                <p>과테말라 에스쿠인틀라 지역 10개 학교에 화장실, 세면대, 물탱크 등을 제공하고 위생 교육을 실시하여 약 1,800명
+                                                    어린이들의 환경을 개선했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action04.jpg" alt="과테말라 학교의 위생 환경 개선">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>탄자니아의 물 공급</h4>
+                                                <p>탄자니아 키고고 마을에 1,500명을 위한 상수도 공급 시스템을 구축하고, 주민들에게 시스템 유지보수 방법과 위생 교육을
+                                                    제공했습니다.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card_item">
+                                            <div class="card_img">
+                                                <img src="../images/sub2/action05.jpg" alt="필리핀의 화장실 보급">
+                                            </div>
+                                            <div class="card_text">
+                                                <h4>필리핀의 화장실 보급</h4>
+                                                <p>필리핀에 화장실 222개와 빗물 집수 장치, 정수기 등을 설치하여 1,000명 이상에게 위생적인 화장실을, 약 600명에게
+                                                    깨끗한 물을 제공했습니다.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Pagination 추가 -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -184,12 +284,12 @@
                         </div>
                         <div class="stat_item">
                             <img src="../images/sub2/icon_investment.svg" alt="투자금액 아이콘">
-                            <p class="stat_number">$1억4800만</p>
+                            <p class="stat_number">$1<span class="stat_suffix">억</span>4800<span class="stat_suffix">만</span></p>
                             <p>로타리재단이 전 세계의 물,<br>위생 시설, 위생 교육 및 수자원<br>관리 활동에 투자한 금액</p>
                         </div>
                         <div class="stat_item">
                             <img src="../images/sub2/icon_schools.svg" alt="학교 수 아이콘">
-                            <p class="stat_number">123개</p>
+                            <p class="stat_number">123<span class="stat_suffix">개</span></p>
                             <p>로타리-USAID의 파트너십으로<br>위생시설이 개선된<br>가나의 학교 수</p>
                         </div>
                     </div>
