@@ -74,16 +74,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Action Swiper for subpage02
-    const actionSwiperElement = document.querySelector('.mySwiper');
+    const actionSwiperElement = document.querySelector('.action_swiper');
     if (actionSwiperElement) {
         const actionSwiper = new Swiper(actionSwiperElement, {
             slidesPerView: 3,
             spaceBetween: 30,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            on: {
+                slideChange: function () {
+                    const prevBtn = document.querySelector('.action_ctrls .prev');
+                    const nextBtn = document.querySelector('.action_ctrls .next');
+                    
+                    if (this.isEnd) {
+                        prevBtn.style.color = '#1354A5';
+                        nextBtn.style.color = '#6DAEFE';
+                    } else if (this.isBeginning) {
+                        prevBtn.style.color = '#6DAEFE';
+                        nextBtn.style.color = '#1354A5';
+                    } else {
+                        prevBtn.style.color = '#1354A5';
+                        nextBtn.style.color = '#1354A5';
+                    }
+                }
+            }
         });
+
+        const actionPrevBtn = document.querySelector('.action_ctrls .prev');
+        const actionNextBtn = document.querySelector('.action_ctrls .next');
+
+        if (actionPrevBtn && actionNextBtn) {
+            actionPrevBtn.style.color = '#6DAEFE';
+            actionNextBtn.style.color = '#1354A5';
+
+            actionPrevBtn.addEventListener('click', () => actionSwiper.slidePrev());
+            actionNextBtn.addEventListener('click', () => actionSwiper.slideNext());
+        }
     }
 
     /* Scroll to Top Button */
@@ -127,5 +151,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         window.dispatchEvent(new Event('scroll'));
+    }
+
+    // Initialize Swiper for subpage03 (Coverflow effect)
+    const subpage03SwiperElement = document.querySelector('#subpage03_swiper');
+    if (subpage03SwiperElement) {
+        var swiper = new Swiper(subpage03SwiperElement, {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
     }
 });

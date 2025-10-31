@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+
+
+html, body { position: relative; height: 100%; }
+body {
+    background: #332d41;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1440px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+    opacity: 0.5;
+}

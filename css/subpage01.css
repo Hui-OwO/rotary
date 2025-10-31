@@ -6,7 +6,7 @@
 .sub_visual::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
 .sub_visual_content { position: relative; text-align: center; color: #fff; }
 .sub_visual_content h2 { font-family: 'paperlogy'; font-size: 6rem; font-weight: 700; }
-.history_visual { background-image: url('../images/history_bg.jpg'); }
+.history_visual { background-image: url('../images/sub1/history_bg.jpg'); }
 
 /* ===== Breadcrumb ===== */
 .breadcrumb { display: flex; align-items: center; gap: 15px; padding-top: 15px; font-size: 1.6rem; color: #888; margin-bottom: 80px;}
