@@ -42,12 +42,12 @@
 .news_header { display:flex; align-items:center; justify-content:space-between; margin-bottom: 40px; }
 .section_title { font-family: 'paperlogy'; font-size: 5.8rem; font-weight: 700; line-height: 120%; color: #000; }
 /* <,>,+ 버튼 */
-.controller { display:flex; gap:15px; align-items:center }
+.news_header .controller, .section_header .controller { display:flex; gap:15px; align-items:center }
 .controller .ctrl { width:46px; height:46px; border-radius:50%; border:2px solid #E1E1E1; background:#fff; color:#2f57a8; cursor: pointer; }
 .controller .ctrl i { font-size: 2.4rem; }
-.controller .ctrl.prev { background: #fff; color: #6DAEFE; }
-.controller .ctrl.next { background: #fff; color: #1354A5; }
-.controller .ctrl.more { background: #fff; color: #00408F;  }
+.news_header .controller .ctrl.prev { background: #fff; color: #6DAEFE; }
+.news_header .controller .ctrl.next { background: #fff; color: #1354A5; }
+.news_header .controller .ctrl.more { background: #fff; color: #00408F;  }
 
 .news_swiper { overflow: visible; /* 그림자가 잘리지 않도록 */ }
 .news_list { display:flex; gap:20px; }
