@@ -99,13 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchModal = document.getElementById('searchModal');
     const openSearchModalBtn = document.getElementById('openSearchModal');
     const closeSearchModalBtn = document.querySelector('.close-search-modal');
-    const searchForm = document.getElementById('searchForm');
 
-    if (searchModal && openSearchModalBtn && closeSearchModalBtn && searchForm) {
+    if (searchModal && openSearchModalBtn && closeSearchModalBtn) {
         openSearchModalBtn.addEventListener('click', (e) => {
             e.preventDefault();
             searchModal.style.display = 'block';
-            document.querySelector('#searchModal input[type="search"]').focus();
         });
 
         closeSearchModalBtn.addEventListener('click', () => {
@@ -115,19 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('click', (e) => {
             if (e.target == searchModal) {
                 searchModal.style.display = 'none';
-            }
-        });
-
-        searchForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const query = document.querySelector('#searchModal input[type="search"]').value;
-            if (query) {
-                alert(`'${query}'에 대한 검색을 수행합니다.`);
-                // 실제 검색 기능은 여기에 구현합니다.
-                // 예: window.location.href = '/search?query=' + encodeURIComponent(query);
-                searchModal.style.display = 'none';
-            } else {
-                alert('검색어를 입력하세요.');
             }
         });
     }
