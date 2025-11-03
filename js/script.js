@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Search Modal
-    const searchModal = document.getElementById('searchModal');
+    /* const searchModal = document.getElementById('searchModal');
     const openSearchModalBtn = document.getElementById('openSearchModal');
     const closeSearchModalBtn = document.querySelector('.close-search-modal');
 
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 searchModal.style.display = 'none';
             }
         });
-    }
+    } */
 
     /* Scroll to Top Button */
     const scrollTopBtn = document.getElementById('scrollTopBtn');
