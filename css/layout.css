@@ -47,7 +47,7 @@
 .controller .ctrl i { font-size: 2.4rem; }
 .news_header .controller .ctrl.prev { background: #fff; color: #6DAEFE; }
 .news_header .controller .ctrl.next { background: #fff; color: #1354A5; }
-.news_header .controller .ctrl.more { background: #fff; color: #00408F;  }
+.news_header .controller .ctrl.more { background: #fff; color: #00408F; }
 
 .news_swiper { overflow: visible; /* 그림자가 잘리지 않도록 */ }
 .news_list { display:flex; gap:20px; }
