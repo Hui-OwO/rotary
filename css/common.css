@@ -41,15 +41,17 @@ a { color: #75797B; text-decoration: none; }
 .logo img { height: 60px; display: block; }
 .gnb ul { display: flex; gap: 60px; align-items: center; }
 .gnb ul li a { color: #000; font-size: 2.2rem; font-weight: 700; line-height: 1.2; /* padding: 8px 0; */ }
+.gnb ul li a:hover { color: #0067C8; }
 .gnb ul li.active a { color: #0067C8; } /* gnb 색상 변경 */
 .head-right { display: flex; align-items: center; gap: 20px; }
 .head-right .icons { display: flex; gap: 5px; margin: 0; padding: 0; }
 .head-right .icons li { list-style: none; }
-.head-right .icons > li > a { display: flex; justify-content: center; align-items: center; width: 52px; height: 52px; border-radius: 50%; color: #00408F; font-size: 3.2rem; }
+.head-right .icons > li > a { display: flex; justify-content: center; align-items: center; width: 48px; height: 48px; border-radius: 50%; color: #00408F; font-size: 3.2rem; }
 .head-right .icons i {width: 32px; height: 32px;}
 .head-right .icons .log_in { background: url('../images/log_in.png') no-repeat center; }
 .head-right .icons .search { background: url('../images/search.png') no-repeat center; }
 .head-right .icons .language { background: url('../images/language.png') no-repeat center; }
+.head-right .icons > li > a:hover { background-color: #E9F3FF; }
 
 .actions { display: flex; gap: 10px; align-items: center }
 /* 버튼 크기 */
@@ -94,79 +96,18 @@ footer hr { border: none; height: 2px; background: #fff; }
 .language-dropdown .dropdown-menu a:hover { background-color: #E9F3FF; color: #00408F; }
 
 /* Search Modal */
-.search-modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1001; /* Higher than header */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.7);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    transition: opacity 0.3s ease;
-}
-
-.search-modal-content {
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    max-width: 600px;
-}
-
-.close-search-modal {
-    color: #fff;
-    opacity: 0.8;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    font-size: 42px;
-    font-weight: normal;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.close-search-modal:hover {
-    opacity: 1;
-}
-
-.search-modal-content form {
-    display: flex;
-    width: 100%;
-}
-
-.search-modal-content input[type="search"] {
-    flex-grow: 1;
-    padding: 15px 25px;
-    font-size: 2rem;
-    border: 2px solid #00408F;
-    border-radius: 40px 0 0 40px;
-    outline: none;
-    background: #fff;
-    color: #333;
-}
-
-.search-modal-content button[type="submit"] {
-    padding: 15px 30px;
-    font-size: 2rem;
-    font-weight: 700;
-    background-color: #00408F;
-    color: #fff;
-    border: 2px solid #00408F;
-    border-left: none;
-    border-radius: 0 40px 40px 0;
-    cursor: pointer;
-}
+.search-modal { display: none; /* Hidden by default */ position: fixed; z-index: 1001; /* Higher than header */ left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.7); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); transition: opacity 0.3s ease; }
+.search-modal-content { position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 600px; }
+.close-search-modal { color: #fff; opacity: 0.8; position: absolute; top: -50px; right: 0; font-size: 42px; font-weight: normal; cursor: pointer; transition: opacity 0.2s; }
+.close-search-modal:hover { opacity: 1; }
+.search-modal-content form { display: flex; width: 100%; }
+.search-modal-content input[type="search"] { flex-grow: 1; padding: 15px 25px; font-size: 2rem; border: 2px solid #00408F; border-radius: 40px 0 0 40px; outline: none; background: #fff; color: #333; }
+.search-modal-content button[type="submit"] { padding: 15px 30px; font-size: 2rem; font-weight: 700; background-color: #00408F; color: #fff; border: 2px solid #00408F; border-left: none; border-radius: 0 40px 40px 0; cursor: pointer; }
 
 @media (max-width:1200px) {
 	.stats_row { flex-direction: column }
 	.stats_left, .stats_right { width: 100% }
 }
-
 
 
 
