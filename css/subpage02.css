@@ -71,7 +71,7 @@
 /* ===== Change Section ===== */
 .video_section_bg { width: 100%; height: 600px; background: #F2F7FF; display: flex; align-items: center; }
 .video_wrapper { display: flex; justify-content: center; }
-.video_wrapper iframe { width: 765px; height: 430px; border-radius: 20px; }
+.video_wrapper iframe { width: 765px; height: 430px; border-radius: 20px; border: none; }
 /* .video_wrapper .video_caption { position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 2.4rem; font-weight: 700; background-color: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 10px; } */
 
 .change_section { padding: 90px 0 160px 0; }
