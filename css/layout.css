@@ -52,10 +52,10 @@
 .news_swiper { overflow: visible; /* 그림자가 잘리지 않도록 */ }
 .news_list { display:flex; gap:20px; }
 .news_card { width: 345px; border-radius: 30px; overflow: hidden; position: relative; }
-.news_card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); z-index: 1; } /* 로타리 소식 위의 글자가 잘 보이기 위한 배경 */
-.news_card a { position: relative; z-index: 2; display: block; }
-.news_card img { display:block; width:100%; height:345px; object-fit:cover }
-.card_caption { position:absolute; left:25px; bottom: 25px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 140%; text-shadow:0 2px 8px rgba(0,0,0,0.7); z-index: 2; }
+.news_card a { position: relative; display: block; }
+.news_card img { display:block; width:100%; height:345px; object-fit:cover; position: relative; z-index: 1; }
+.gradient-overlay { position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); z-index: 2; }
+.card_caption { position:absolute; left:25px; bottom: 25px; color:#fff; font-size:2.2rem; font-weight:500; line-height: 140%; text-shadow:0 2px 8px rgba(0,0,0,0.7); z-index: 3; }
 
 
 /* ===== 행동하는 사람들 섹션 ===== */

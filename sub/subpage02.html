@@ -19,6 +19,12 @@
     <script src="../js/script.js"></script>
 </head>
 <body>
+    <div id="skipNavi">
+        <ul>
+            <li><a href="#contents">본문으로 건너뛰기</a></li>
+        </ul>
+    </div>
+
     <div class="wrap">
         <!-- 헤더 (로고 / 네비게이션 / 유틸리티 버튼) -->
         <header class="site-header">
@@ -44,15 +50,15 @@
                         <li><a href="javascript:void(0);" title="언어"><i class="language"></i></a></li>
                     </ul>
                     <div class="actions">
-                        <a class="btn btn-outline" href="#">클럽 가입</a>
-                        <a class="btn btn-primary" href="#">후원하기</a>
+                        <a class="btn btn-outline" href="javascript:void(0);">클럽 가입</a>
+                        <a class="btn btn-primary" href="javascript:void(0);">후원하기</a>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- 서브 비주얼 -->
-        <section class="sub_visual history_visual">
+        <section class="sub_visual history_visual" id="contents">
             <div class="sub_visual_content">
                 <h2>수자원 및 위생 개선</h2>
             </div>
