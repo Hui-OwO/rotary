@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /* const searchModal = document.getElementById('searchModal');
     const openSearchModalBtn = document.getElementById('openSearchModal');
     const closeSearchModalBtn = document.querySelector('.close-search-modal');
+    const searchForm = document.getElementById('searchForm');
 
     if (searchModal && openSearchModalBtn && closeSearchModalBtn) {
         openSearchModalBtn.addEventListener('click', (e) => {
@@ -113,6 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
         window.addEventListener('click', (e) => {
             if (e.target == searchModal) {
                 searchModal.style.display = 'none';
+            }
+        });
+    }
+
+    if (searchForm) {
+        searchForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = e.target.query.value;
+            if (query) {
+                window.location.href = `sub/search_results.html?query=${encodeURIComponent(query)}`;
             }
         });
     } */
@@ -159,4 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         window.dispatchEvent(new Event('scroll'));
     }
+
+    // GNB Dropdown
+    
 });
