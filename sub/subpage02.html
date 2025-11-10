@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>수자원 및 위생 개선 | 국제 로타리</title>
 
+    <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/subpage02.css">
     <link rel="stylesheet" href="../css/font.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" >
     <!-- font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -27,44 +30,416 @@
 
     <div class="wrap">
         <!-- 헤더 (로고 / 네비게이션 / 유틸리티 버튼) -->
-        <header class="site-header">
-            <div class="container head">
-                <div class="head-left">
-                    <h1 class="logo"><a href="../index.html"><img src="../images/LOGO.svg" alt="Rotary 로고"><span class="blind">로타리 로고</span></a></h1>
+        <div class="header-wrap"> <!-- 여기부터 -->
+            <!-- 메인 상단 팝업 -->
+            <header id="header">
+                <div class="inwrap-big header-inwrap">
+                    <h1>
+                        <a href='../index.html' id="logo">
+                            <img src='../images/LOGO.svg' alt="Rotary" class="off">
+                            <img src='../images/LOGO.svg' alt="Rotary" class="on">
+                        </a>
+                    </h1>
+
+                    <div class="header-c">
+                        <div class="gnb-pc">
+                            <nav id="gnb">
+                                <ul>
+                                    <li class="mn_l1 ">
+                                        <a href='subpage01.html' class="mn_a1 1"><span>로타리란?</span></a>
+                                        <div class="depth2">
+                                            <div class="depth2-inwrap">
+                                                <div class="depth2-title">
+                                                    <h2>로타리란?</h2>
+                                                </div>
+                                                <ul>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>로타리
+                                                                소개</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리란?</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>우리의 가치</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>리더십</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>연혁/조직</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리의 구조</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리재단</span></a></li>
+                                                                <li class="mn_l3"><a
+                                                                        href='javascript:void(0);'
+                                                                        class="mn_a3"><span>역사</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>파트너</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>파트너십</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>투명경영</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>재정 현황</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>연차보고서</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>인재채용</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>채용정보</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>연락처</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>문의하기</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mn_l1 ">
+                                        <a href='subpage02.html' class="mn_a1 1"><span>활동</span></a>
+                                        <div class="depth2">
+                                            <div class="depth2-inwrap">
+                                                <div class="depth2-title">
+                                                    <h2>활동</h2>
+                                                </div>
+                                                <ul>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>7대
+                                                                초점분야</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>평화 증진</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>질병 예방 및 치료</span></a></li>
+                                                                <li class="mn_l3"><a
+                                                                        href='javascript:void(0);'
+                                                                        class="mn_a3"><span>수자원 및 위생 개선</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>모자 보건</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>기본 교육과 문해력 향상</span></a>
+                                                                </li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>지역사회 경제 개발</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>환경 보호</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>주요
+                                                                프로그램</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>소아마비 퇴치</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>재해구호기금</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>프로그램 및 교부금</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>성과보기</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>숫자로 보는 로타리</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>우리의 이야기</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mn_l1 ">
+                                        <a href='javascript:void(0);' class="mn_a1 1"><span>참여</span></a>
+                                        <div class="depth2">
+                                            <div class="depth2-inwrap">
+                                                <div class="depth2-title">
+                                                    <h2>참여</h2>
+                                                </div>
+                                                <ul>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>참여하기</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>클럽 가입</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>이벤트/행사 참여</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>연수 및 교환</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>후원하기</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리재단 기부</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>소아마비 퇴치 기부</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>다양한 기부 방법</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>후원 문의 (Q&A)</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);'
+                                                            class="mn_a2"><span>회원유형</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리안</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타랙터</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>인터랙터</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mn_l1 ">
+                                        <a href='javascript:void(0);' class="mn_a1 1"><span>소식</span></a>
+                                        <div class="depth2">
+                                            <div class="depth2-inwrap">
+                                                <div class="depth2-title">
+                                                    <h2>소식</h2>
+                                                </div>
+                                                <ul>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>새소식</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리 뉴스</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>공지사항</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>미디어</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리 매거진</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>언론 보도자료</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>영상 및 사진 자료실</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>이벤트</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>세계 소아마비의 날</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>국제대회</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mn_l1 hidden">
+                                        <a href='javascript:void(0);' class="mn_a1 1"><span>내 로타리</span></a>
+                                        <div class="depth2">
+                                            <div class="depth2-inwrap">
+                                                <div class="depth2-title">
+                                                    <h2>내 로타리</h2>
+
+                                                </div>
+                                                <ul>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>내
+                                                                정보</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>프로필 관리</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>나의 기부 내역</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>참여 행사/프로그램</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>클럽 활동 및
+                                                                관리</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>클럽/지구 관리</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리클럽 센트럴</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>우수 클럽 표창 (자격 조회)</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>로타리
+                                                                네트워크</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>클럽찾기</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>클럽 창립하기</span></a></li>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리 국제대회</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="mn_l2">
+                                                        <a href='javascript:void(0);' class="mn_a2"><span>기부 및
+                                                                재단</span></a>
+                                                        <div class="depth3">
+                                                            <ul>
+                                                                <li class="mn_l3"><a href='javascript:void(0);'
+                                                                        class="mn_a3"><span>로타리 재단</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- <button type="button" class="sitemap-open">
+                        <span class="icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                        <span class="a11y">사이트맵 열기</span>
+                    </button>
+                    <button type="button" class="mbMenu-open">
+                        <span class="icon">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </span>
+                        <span class="a11y">메뉴 열기</span>
+                    </button> -->
+                    </div>
+
+                    <div class="head-r">
+                        <ul class="icons">
+                            <li><a href="javascript:void(0);" title="회원"><i class="log_in"></i><span
+                                        class="blind">회원</span></a></li>
+                            <li><a href="javascript:void(0);" title="검색" id="openSearchModal"><i
+                                        class="search"></i><span class="blind">검색</span></a></li>
+                            <li class="language-dropdown">
+                                <a href="javascript:void(0);" title="언어" class="dropdown-toggle">
+                                    <i class="language"></i><span class="blind">언어</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html">한국어</a></li>
+                                    <li><a href="javascript:void(0);">English</a></li>
+                                    <li><a href="javascript:void(0);">日本語</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="actions">
+                            <a class="btn btn-outline" href="javascript:void(0);">클럽 가입</a>
+                            <a class="btn btn-primary" href="javascript:void(0);">후원하기</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="header-login">
+                    <div class="loginBox">
+                        <a href='https://www.changwon.go.kr/barobaro/view.do?no=183'
+                            class="user login"><span>로그인</span></a>
+                        <a href='https://www.changwon.go.kr/barobaro/view.do?no=184' class="join">회원가입</a>
+                    </div>
+                </div> -->
                 </div>
 
-                <nav class="gnb">
-                    <ul>
-                        <li><a href="subpage01.html">로타리란?</a></li>
-                        <li class="active"><a href="subpage02.html">활동</a></li>
-                        <li><a href="javascript:void(0);">참여</a></li>
-                        <li><a href="javascript:void(0);">소식</a></li>
-                        <li><a href="javascript:void(0);">내 로타리</a></li>
-                    </ul>
-                </nav>
-
-                <div class="head-right">
-                    <ul class="icons">
-                        <li><a href="javascript:void(0);" title="회원"><i class="log_in"></i><span class="blind">회원</span></a></li>
-                        <li><a href="javascript:void(0);" title="검색"><i class="search"></i><span class="blind">검색</span></a></li>
-                        <li class="language-dropdown">
-                            <a href="javascript:void(0);" title="언어" class="dropdown-toggle">
-                                <i class="language"></i><span class="blind">언어</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="../index.html">한국어</a></li>
-                                <li><a href="javascript:void(0);">English</a></li>
-                                <li><a href="javascript:void(0);">日本語</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="actions">
-                        <a class="btn btn-outline" href="javascript:void(0);">클럽 가입</a>
-                        <a class="btn btn-primary" href="javascript:void(0);">후원하기</a>
+                <div class="gnb-pc-depthbg">
+                    <div class="gnb-pc-depthbg-inwbox">
+                        <div class="gnb-pc-depthbg-inwrap">
+                            <div class="gnb-pc-depthbg-title">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
+                <div class="gnb-mb">
+                    <!-- 모바일 메뉴 액티브 효과 고정이 필요할 시 mn_l1, mn_l2에 active 클래스 주면 됩니다 -->
+                </div>
+                <div class="gnb-mb-bg"></div>
+            </header>
+            <!-- <div class="sitemap">
+                <div class="sitemap-inBox">
+                    <div class="sitemap-inwrap">
+                        <div class="sitemap-title">
+                            <h1 class="logo"><a href="#n"><img
+                                        src='https://www.changwon.go.kr/barobaro/portal/img/Layout/logo_1.svg'
+                                        alt="창원특례시 정비사업 통합누리집" class="on"></a></h1>
+                        </div>
+                        <div class="inwrap">
+                            <div class="sitemap-gnb"></div>
+                        </div>
+                        <button type="button" class="sitemap-close"><span class="a11y">사이트맵 닫기</span><span
+                                class="icon"></span></button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
 
         <!-- 서브 비주얼 -->
         <section class="sub_visual history_visual" id="contents">
@@ -403,5 +778,15 @@
         </svg>
         <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+
+
+
+    <div class="gnb-pc-bg"></div>
+    </div><!-- wrap :: e -->
+
+
+
+    <script src="../js/layout.js"></script>
 </body>
 </html>

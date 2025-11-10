@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* 스킵네비게이션 */
+/* #skipNavi {height:0;}
+#skipNavi .skipLink {position:absolute;top:-1000px;left:-1000px;overflow:hidden;z-index:5000;}
+#skipNavi .skipLink:focus, #skipNavi .skipLink:active {top:0;left:0;padding:10px 20px;background:#1e64ba;color:#fff;} */
+
+html{font-size:62.5%;-webkit-font-smoothing:antialiased;}
+
+@media screen and(max-width:480px){
+	html {font-size:52.5%;}
+}
+body{font-family:"NanumGothic", -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; letter-spacing: -0.03em; font-size: 1.6rem; color: #222; -webkit-font-smoothing: antialiased; word-wrap: break-word; word-break: keep-all;}
+
+
+.flex-r {margin-left:auto;}
+
+
+/* color */
+:root { --point-color: #0067C8; }
+.fc-point { color: var(--point-color)}
+.fc-red { color: #f74f4f}
+
+
+/* grey-box */
+/* .grey-box {width:100%; padding:2.4rem 3rem; border:1px solid #e2e5ea; background:#f4f4f4; margin-bottom:60px; line-height:160%;}
+.grey-box * {line-height:160%;} */
+
+
+
