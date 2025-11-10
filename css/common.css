@@ -65,8 +65,8 @@ a { color: #75797B; text-decoration: none; }
 .actions { display: flex; gap: 10px; align-items: center }
 /* 버튼 크기 */
 .btn { display: inline-block; padding: 15px 20px; border-radius: 15px; font-size: 2.2rem; font-weight: 700; line-height: 120%; text-decoration: none; }
-.btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F; box-shadow: inset 0 0 0 2px #00408F; }
-.btn-primary { background: #00408F; color: #fff; }
+.btn-outline { /* 외부 border 대신 내부선(inset)으로 변경 */ box-sizing: border-box; background: transparent; color: #00408F !important; box-shadow: inset 0 0 0 2px #00408F; }
+.btn-primary { background: #00408F; color: #fff !important; }
 
 .blind { border: 0; clip: rect(0 0 0 0); clip-path: inset(50%); width: 1px; height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; }
 
